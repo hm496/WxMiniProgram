@@ -4,7 +4,12 @@ var app = getApp()
 Page({
   data: {
     motto: 'Hello World',
-    userInfo: {}
+    userInfo: {},
+    imgUrls:[
+      "../../assets/img/s01.jpg",
+      "../../assets/img/s02.jpg",
+      "../../assets/img/s03.jpg",
+    ]
   },
   //事件处理函数
   bindViewTap: function () {

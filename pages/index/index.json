@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "img-btn": "../../components/imgBtn/imgBtn"
+  }
+}

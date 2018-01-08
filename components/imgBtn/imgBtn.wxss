@@ -1,0 +1,9 @@
+.img-btn {
+  display:inline-block;
+}
+
+.img-btn-image {
+  width:93rpx;
+  height:93rpx;
+  display:inline-block;
+}

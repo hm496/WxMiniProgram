@@ -1,10 +1,46 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<scroll-view scroll-y class="container">
+  <view style="padding-top:90rpx;">
+    <view class="home-headbar">
+      123
+    </view>
+    <swiper indicator-dots="{{true}}"
+            class="slide-swiper"
+            indicator-color="#ffffff"
+            indicator-active-color="#ee4433"
+            circular="{{true}}"
+            autoplay="{{true}}" interval="{{4000}}" duration="{{200}}">
+      <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <swiper indicator-dots="{{true}}"
+            class="slide-btngroup"
+            indicator-color="#d8d8d8"
+            indicator-active-color="#ee4433"
+            autoplay="{{false}}" duration="{{300}}">
+      <swiper-item class="slide-btn-item">
+        <view class="row">
+          <img-btn innerText="{{'组件'}}"></img-btn>
+          <img-btn innerText="{{'组件'}}"></img-btn>
+          <img-btn innerText="{{'组件'}}"></img-btn>
+          <img-btn innerText="{{'组件'}}"></img-btn>
+        </view>
+        <view class="row">
+          <img-btn innerText="{{'组件'}}"></img-btn>
+          <img-btn innerText="{{'组件'}}"></img-btn>
+          <img-btn innerText="{{'组件'}}"></img-btn>
+          <img-btn innerText="{{'组件'}}"></img-btn>
+        </view>
+
+
+      </swiper-item>
+      <swiper-item>
+        <img-btn innerText="{{'组件'}}"></img-btn>
+      </swiper-item>
+    </swiper>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+
+</scroll-view>
